@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Create User</title>
+</head>
+<body>
+    <h1>Create User</h1>
+    <button onclick="toggleForm(this)">Create User</button>
+    <form action="submit" class="popup">
+        <section>
+            <h1>SignUp Form</h1><br>
+            <input type="text" placeholder="Email ID" required><br>
+            <input type="text" placeholder="Username" required><br>
+            <input type="password" placeholder="Password" required><br>
+            <label for="assigned_role">Choose assigned role</label>
+            <select name="assigned_role">
+                <option value="owner">Owner</option>
+                <option value="option2">Option2</option>
+                <option value="option3">Option3</option>
+                <option value="option4">Option4</option>
+            </select><br>
+            <button>SignUp</button><br>
+            <button>Create Link</button><br>
+            <button>Generate QR for Team</button><br>
+            <button>Scan QR</button><br>
+        </section>
+        <section>
+            <h1>Add User Form</h1><br>
+            <input type="text" placeholder="Email ID"><br>
+            <label for="role">Enter Assigned Role</label>
+            <select name="role">
+                <option value="owner">Owner</option>
+                <option value="option">Option2</option>
+                <option value="option">Option3</option>
+                <option value="option">Option4</option>
+            </select><br>
+            <button>Add Workspace</button><br>
+            <button>Create Invite Link</button><br>
+        </section>
+    </form>
+    
+    
+</body>
+<script src="javascript.js"></script>
+</html>
